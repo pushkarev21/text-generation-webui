@@ -706,7 +706,7 @@ def split_chunks(arr, size, step):
 
 
 def cut_chunk_for_newline(chunk: str, max_length: int):
-    if '\n' not in chunk:
+    if b'\n' not in chunk:
         return chunk
 
     first_newline = chunk.index('\n')
